@@ -1,0 +1,32 @@
+{{#if model.folder }}
+    {{#if model.folder.parent }}
+
+        {{#link-to 'index'}}
+            <strong>Home</strong>
+        {{/link-to}}
+
+        {{#link-to 'folder' model.folder.parent title='Go UP' class='audience-folders__header-item'}}
+            {{model.folder.name}}
+        {{/link-to}}
+    {{else}}
+        {{#link-to 'folders' title='Go UP' class='audience-folders__header-item'}}
+            {{model.folder.name}}
+        {{/link-to}}
+    {{/if}} 
+{{/if}}
+
+{{#if model.folders }}
+<div class="audience-folders__list">
+    {{#each model.folders as |folderItem|}}
+        {{audience-folder-listing folder=folderItem}}
+    {{/each}}
+</div>
+{{/if}}
+
+{{#if model.audience }}
+<ul class="audience-filders__audiences-list">
+    {{#each model.audience as |audienceItem|}}
+        {{audience-listing audience=audienceItem}}
+    {{/each}}
+</ul>
+{{/if}}

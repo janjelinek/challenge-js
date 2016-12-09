@@ -1,0 +1,28 @@
+.audience-folders__list__item, .audience-folders__header-item {
+    display: block;
+    padding: 1em;
+    background: #1a7199;
+    color: white;
+    margin: 0.5em 0;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.audience-folders__header-item:before {
+    content: " \2190 ";
+    padding: 0 0.5em;
+}
+
+.audience-filders__audiences-list {
+    list-style: none;
+    padding: 0;
+}
+
+.audience-folders__audiences-list__item {
+    display: block;
+    padding: 1em;
+    background: #1897cd;
+    margin: 0.2em;
+    color: white;
+    border-radius: 4px;
+}
