@@ -1,0 +1,20 @@
+{
+  "name": "audiences-elm",
+  "version": "0.0.0",
+  "description": "Javascript GWI challange in Elm solution",
+  "license": "MIT",
+  "author": "Jan Navrátil <kurnick@gmail.com>",
+  "directories": {},
+  "repository": "",
+  "scripts": {
+    "build": "elm-make audiences.elm --output=index.html",
+    "start": "node_modules/http-server/bin/http-server"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "private": true
+}
